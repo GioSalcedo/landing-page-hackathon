@@ -88,3 +88,36 @@ body{
     }
 
 }
+
+/*inicio banner*/
+.banner {
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .banner p {
+      margin: 0;
+      font-size: 2.2em;
+      position: relative;
+      top: 200PX;
+      color: #fbf5fe;
+    }
+    .banner H1{
+        color: #fbf5fe;
+        position: relative;
+        top: -50px;
+    }
+    
+
+    @media (min-width: 1200px) and (max-width: 1400px) {
+      .banner {
+        width: 1300px;
+        padding: 20px 20px 20px 20px;
+        margin: 30px;
+      }
+      .imagen1{
+        width: 800px;
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+/*fin banner/
