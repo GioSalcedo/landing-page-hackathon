@@ -1,220 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <title>Landing page Hackathon</title>
-  </head>
-  <body>
-    <header class="header">
-      <figure class="header__figure">
-        <svg
-          aria-hidden="true"
-          class="pre-logo-svg"
-          focusable="false"
-          viewBox="0 0 24 24"
-          role="img"
-          width="50px"
-          height="50px"
-          fill="none"
-        >
-          <path
-            fill="currentColor"
-            fill-rule="evenodd"
-            d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </figure>
-      <nav class="header__nav">
-        <a href="#" class="nav__link">Inicio</a>
-        <a href="#" class="nav__link">Productos</a>
-        <a href="#" class="nav__link">Sobre nosotros</a>
-      </nav>
-      <!--shopping cart-->
-      <div class="container-icon">
-        <div class="container-cart-icon">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon-cart"
-          >
-            <g clip-path="url(#clip0_14_11)">
-              <path
-                d="M4.66669 12C3.93335 12 3.34002 12.6 3.34002 13.3333C3.34002 14.0667 3.93335 14.6667 4.66669 14.6667C5.40002 14.6667 6.00002 14.0667 6.00002 13.3333C6.00002 12.6 5.40002 12 4.66669 12ZM0.666687 2.00001C0.666687 2.36668 0.966687 2.66668 1.33335 2.66668H2.00002L4.40002 7.72668L3.50002 9.35334C3.01335 10.2467 3.65335 11.3333 4.66669 11.3333H12C12.3667 11.3333 12.6667 11.0333 12.6667 10.6667C12.6667 10.3 12.3667 10 12 10H4.66669L5.40002 8.66668H10.3667C10.8667 8.66668 11.3067 8.39334 11.5334 7.98001L13.92 3.65334C14.1667 3.21334 13.8467 2.66668 13.34 2.66668H3.47335L3.02669 1.71334C2.92002 1.48001 2.68002 1.33334 2.42669 1.33334H1.33335C0.966687 1.33334 0.666687 1.63334 0.666687 2.00001ZM11.3334 12C10.6 12 10.0067 12.6 10.0067 13.3333C10.0067 14.0667 10.6 14.6667 11.3334 14.6667C12.0667 14.6667 12.6667 14.0667 12.6667 13.3333C12.6667 12.6 12.0667 12 11.3334 12Z"
-                fill="#61256A"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_14_11">
-                <rect width="16" height="16" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-          <div class="count-products">
-            <span id="contador-productos">0</span>
-          </div>
-        </div>
+</head>
 
-        <!-- modelo de card de producto -->
-        <div class="container-cart-products hidden-cart">
-          <div class="row-product hidden">
-            <div class="cart-product">
-              <div class="info-cart-product">
-                <span class="cantidad-producto-carrito">1</span>
-                <p class="titulo-producto-carrito">Zapatos Nike</p>
-                <span class="precio-producto-carrito">$80</span>
-              </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icon-close"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+<body>
+    <!-- inicio navegacion -->
+    <header id="inicio" class="header container">
+        <figure class="header-figure">
+            <svg aria-hidden="true" class="logo-nike" focusable="false" viewBox="0 0 24 24" role="img" width="50px"
+                height="50px" fill="none">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M21 8.719L7.836 14.303C6.74 14.768 5.818 15 5.075 15c-.836 0-1.445-.295-1.819-.884-.485-.76-.273-1.982.559-3.272.494-.754 1.122-1.446 1.734-2.108-.144.234-1.415 2.349-.025 3.345.275.2.666.298 1.147.298.386 0 .829-.063 1.316-.19L21 8.719z"
+                    clip-rule="evenodd"></path>
+            </svg>
+
+            <span class="header-span">SportFake</span>
+        </figure>
+        <nav id="navegacion" class="header-nav">
+            <a href="#inicio" class="nav-link">Inicio</a>
+            <a href="#productos" class="nav-link">Productos</a>
+            <a href="#sobreNosotros" class="nav-link">Sobre nosotros</a>
+            <figure class="nav-figure">
+                <!-- img-cart -->
+                <div class="container-icon ">
+                    <div class="container-cart-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="icon-cart ">
+                            <g clip-path="url(#clip0_14_11)">
+                                <path
+                                    d="M4.66669 12C3.93335 12 3.34002 12.6 3.34002 13.3333C3.34002 14.0667 3.93335 14.6667 4.66669 14.6667C5.40002 14.6667 6.00002 14.0667 6.00002 13.3333C6.00002 12.6 5.40002 12 4.66669 12ZM0.666687 2.00001C0.666687 2.36668 0.966687 2.66668 1.33335 2.66668H2.00002L4.40002 7.72668L3.50002 9.35334C3.01335 10.2467 3.65335 11.3333 4.66669 11.3333H12C12.3667 11.3333 12.6667 11.0333 12.6667 10.6667C12.6667 10.3 12.3667 10 12 10H4.66669L5.40002 8.66668H10.3667C10.8667 8.66668 11.3067 8.39334 11.5334 7.98001L13.92 3.65334C14.1667 3.21334 13.8467 2.66668 13.34 2.66668H3.47335L3.02669 1.71334C2.92002 1.48001 2.68002 1.33334 2.42669 1.33334H1.33335C0.966687 1.33334 0.666687 1.63334 0.666687 2.00001ZM11.3334 12C10.6 12 10.0067 12.6 10.0067 13.3333C10.0067 14.0667 10.6 14.6667 11.3334 14.6667C12.0667 14.6667 12.6667 14.0667 12.6667 13.3333C12.6667 12.6 12.0667 12 11.3334 12Z"
+                                    fill="#61256A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_14_11">
+                                    <rect width="16" height="16" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="count-products">
+                        <span id="contador-productos">0</span>
+                    </div>
+
+                </div>
+
+
+                <svg class="menu-amburguesa" width="30" height="48" viewBox="0 0 71 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 48H72V40H0V48ZM0 28H72V20H0V28ZM0 0V8H72V0H0Z" fill="#61256A" />
+                </svg>
+
+
+            </figure>
+        </nav>
+        <!--shopping cart-->
+
+
+        <div class="container-cart-products hidden-cart ">
+            <div class="row-product hidden">
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Zapatos Nike</p>
+                        <span class="precio-producto-carrito">$80</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
             </div>
-          </div>
 
-          <div class="cart-total hidden">
-            <h3>Total:</h3>
-            <span class="total-pagar">$200</span>
-          </div>
-          <p class="cart-empty">El carrito está vacío</p>
+            <div class="cart-total hidden">
+                <h3>Total:</h3>
+                <span class="total-pagar">$200</span>
+            </div>
+            <p class="cart-empty">El carrito está vacío</p>
         </div>
-      </div>
+        </div>
     </header>
-    
+    <!-- fin navegacion -->
+
+    <!-- inicio banner -->
+
+    <section class="section-banner container">
+        <div class="section-content">
+            <h1 class="section-title">
+                ¡Aprovecha nuestra promoción especial!
+            </h1>
+            <a class="section-button" href="#">Compra aqui!<a>
+                    <p class="section-nameLogo">
+                        SportFake
+                    </p>
+        </div>
+    </section>
+
+
+    <main id="productos" class="main">
+        <div class="main-container container">
+            <h2 class="main-title">Productos</h2>
+
+            <div class="main-cards">
+                <div class="main-card">
+                    <figure class="main-photo">
+                        <img src="" alt="" class="main-img">
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <!-- Modelo de card -->
-    <div class="container-items">
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+    <div class="container-items container">
+
+        <div class="item">
+            <figure class="figure-item">
+                <img class="img-item"
+                    src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike Field30</h2>
+                <p class="price">$80</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/zjrheo7cjgrv6opt8txu/tenis-air-force-1-07-wb-txRBM6.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike Air23</h2>
+                <p class="price">$160</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+
+
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/eaorr1snaoqwpjnceij2/tenis-de-entrenamiento-air-monarch-4-p8qNlT.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike 2sheetInU</h2>
+                <p class="price">$69</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c3c2c98e-8bf4-4b18-995d-636bd4fef1f6/calzado-air-force-1-shadow-kTgn9J.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike Level2</h2>
+                <p class="price">$89</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c20afd60-b230-4815-bfd2-6768c875f6cd/calzado-air-force-1-07-J7xw5P.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike AirForce</h2>
+                <p class="price">$94</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b27b0e09-4e19-4f9d-82c7-bb58c4922c62/calzado-air-force-1-07-PqdxJw.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike Level4</h2>
+                <p class="price">$140</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ed1b459f-e09a-4b64-9b29-fb0c5d78b49f/tenis-air-force-1-07-high-XTJLXX.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike Seven</h2>
+                <p class="price">$160</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/38cad9d3-6574-406c-b015-23ca7f65533a/tenis-grandes-air-force-1-le-Tzzkvl.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike Jk</h2>
+                <p class="price">$70</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
-      <div class="item">
-        <figure>
-					<img
-						src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f094af40-f82f-4fb9-a246-e031bf6fc411/calzado-air-force-1-07-b19lqD.png"
-						alt="producto"
-					/>
-				</figure>
-        <div class="info-product">
-          <h2>Zapatos Nike</h2>
-          <p class="price">$80</p>
-          <button class="btn-add-cart">Añadir al carrito</button>
+        <div class="item">
+            <figure>
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/752efdf6-b2b7-47fc-b137-5a70b5dd9423/calzado-air-force-1-07-5xqQ6q.png"
+                    alt="producto" />
+            </figure>
+            <div class="info-product">
+                <h2>Zapatos Nike One</h2>
+                <p class="price">$130</p>
+                <button class="btn-add-cart">Añadir al carrito</button>
+            </div>
         </div>
-      </div>
     </div>
+
+    <!--inicio video-->
+    <div id="sobreNosotros" class="seccion-video container">
+        <iframe class="video" width="853" height="480" src="https://www.youtube.com/embed/KriBQVhsgZk"
+            title="Nike Football: The Last Game full edition" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <!--fin video-->
+
+
+
+    <!--inicio footer-->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-details">
+                    <div class="footer-logo">
+                        <a href="https://www.facebook.com/" target="_blank"><img
+                                src="imagenes/Facebook_icon.svg.png"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img
+                                src="imagenes/instagram-removebg-preview.png"></a>
+                        <a href="https://twitter.com/" target="_blank"><img
+                                src="imagenes/tuiter-removebg-preview.png"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img
+                                src="imagenes/in_linked_linkedin_media_social_icon_124259.png"></a>
+                    </div>
+                    <p>SportFake Todos los derechos reservados </p>
+                    <p>SportFake by SportFake Digital</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--fin footer-->
+
+    <a href="https://wa.me/+573137613879" class="boton-whatsapp" target="_blank">
+        <img src="./assets/whatsapp.svg" alt="ICONO" class="icono-whatsapp">
+    </a>
+
+
     <script src="app.js"></script>
-  </body>
+    <script src="menu.js"></script>
+</body>
+
 </html>
