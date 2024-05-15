@@ -14,3 +14,77 @@
 body{
     background-color: var(--white);
 }
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    text-wrap: nowrap;
+}
+.header__figure{
+    display: flex;
+    align-items: center;
+}
+.logo__nike{
+    color: var(--color-secondary);
+    width: 80px;
+    height: 80px;
+}
+
+.header__span{
+    font-size: 2rem;
+}
+
+.nav__link{
+    display: none;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.nav__link::after{
+    content: "";
+}
+
+.nav__figure{
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.img__cart{
+    width: 30px;
+    height: 30px;
+}
+
+.nav__menu{
+    width: 30px;
+    height: 30px;
+}
+
+@media(min-width:768px){
+
+    .nav__menu{
+        display: none;
+    }
+    .nav__link{
+        display: block;
+    }
+
+}
