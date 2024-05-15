@@ -72,6 +72,9 @@ body{
     width: 30px;
     height: 30px;
 }
+.container-icon{
+    
+}
 
 .nav__menu{
     width: 30px;
@@ -233,11 +236,12 @@ header{
 
 .container-cart-products{
     position: absolute;
-    top: 50px;
-    right: 0;
+    top: 90px;
+    right: 20px;
 
     background-color: #fff;
-    width: 400px;
+    width: 90%;
+    margin: 0 auto;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
     border-radius: 10px;
