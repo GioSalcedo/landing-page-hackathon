@@ -113,6 +113,20 @@ body{
         border-style: solid;
         border-color: #8C2D9E;
     }
+    .banner a {
+        color: #fbf5fe;
+        background-color: #8C2D9E;
+        text-decoration: none;
+        padding: 7px 14px;
+        border-radius: 4px;
+        position: relative;
+        top: 250px;
+    }
+
+    .banner a:hover{
+        background-color: #61256A;
+    }
+  
     
 
     @media (min-width: 768px) {
@@ -127,5 +141,25 @@ body{
         object-fit: cover;
         
       }
+      .banner p{
+        font-size: 3em;
+      }
+
+      .banner a {
+        color: #fbf5fe;
+        background-color: #8C2D9E;
+        text-decoration: none;
+        padding: 7px 14px;
+        border-radius: 4px;
+        position: relative;
+        top: -150px;
+        left: 600px;
     }
+
+    .banner a:hover{
+        background-color: #61256A;
+    }
+  
+
+      
 /*fin banner/
