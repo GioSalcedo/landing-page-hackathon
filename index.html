@@ -9,10 +9,10 @@
   <body>
     <!-- inicio navegacion -->
     <header class="header container">
-      <figure class="header__figure">
+      <figure class="header-figure">
         <svg
           aria-hidden="true"
-          class="logo__nike"
+          class="logo-nike"
           focusable="false"
           viewBox="0 0 24 24"
           role="img"
@@ -28,14 +28,14 @@
           ></path>
         </svg>
 
-            <span class="header__span">SportFake</span>
+            <span class="header-span">SportFake</span>
       </figure>
-      <nav class="header__nav">
-        <a href="#" class="nav__link">Inicio</a>
-        <a href="#" class="nav__link">Productos</a>
-        <a href="#" class="nav__link">Sobre nosotros</a>
-            <figure class="nav__figure">
-                <!-- img__cart -->
+      <nav id="navegacion" class="header-nav">
+        <a href="#" class="nav-link">Inicio</a>
+        <a href="#" class="nav-link">Productos</a>
+        <a href="#" class="nav-link">Sobre nosotros</a>
+            <figure class="nav-figure">
+                <!-- img-cart -->
             
                 <div class="container-icon ">
                     <div class="container-cart-icon">
@@ -67,10 +67,14 @@
                    
                 </div>
                 
-                <svg class="nav__menu" width="71" height="48" viewBox="0 0 71 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button id="button-menu" class="nav-menu"> 
+                <svg class="menu-amburguesa"  width="30" height="48" viewBox="0 0 71 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 48H72V40H0V48ZM0 28H72V20H0V28ZM0 0V8H72V0H0Z" fill="#61256A"/>
                 </svg>
-                    
+                <span>menu1</span>
+                <span>menu2</span>
+                <span>menu3</span>
+            </button>   
             </figure>
       </nav>
       <!--shopping cart-->
@@ -113,13 +117,13 @@
     
     <!-- inicio banner -->
 
-    <section class="section__banner container">
-        <div class="section__content">
-            <h1 class="section__title">
+    <section class="section-banner container">
+        <div class="section-content">
+            <h1 class="section-title">
                 ¡Aprovecha nuestra promoción especial!
             </h1>
-            <a class="section__button" href="#">Compra aqui!<a>
-            <p class="section__nameLogo">
+            <a class="section-button" href="#">Compra aqui!<a>
+            <p class="section-nameLogo">
                 SportFake
             </p>
         </div>
@@ -127,13 +131,13 @@
 
 
     <main class="main">
-        <div class="main__container container">
-            <h2 class="main__title">Productos</h2>
+        <div class="main-container container">
+            <h2 class="main-title">Productos</h2>
 
-            <div class="main__cards">
-                <div class="main__card">
-                    <figure class="main__photo">
-                        <img src="" alt="" class="main__img">
+            <div class="main-cards">
+                <div class="main-card">
+                    <figure class="main-photo">
+                        <img src="" alt="" class="main-img">
                     </figure>
                 </div>
             </div>
@@ -264,7 +268,7 @@
     </div>
     
      <!--inicio video-->
-     <div class="seccion__video container">
+     <div class="seccion-video container">
         <iframe class="video" width="853" height="480" src="https://www.youtube.com/embed/KriBQVhsgZk" 
         title="Nike Football: The Last Game full edition" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -277,9 +281,9 @@
        <!--inicio footer-->
        <footer>
            <div class="container">
-               <div class="footer__content">
-                   <div class="footer__details">
-                       <div class="footer__logo">
+               <div class="footer-content">
+                   <div class="footer-details">
+                       <div class="footer-logo">
                            <a href="https://www.facebook.com/ target="_blank"><img src="imagenes/Facebook_icon.svg.png"></a>
                            <a href="https://www.instagram.com/" target="_blank"><img src="imagenes/instagram-removebg-preview.png"></a>
                            <a href="https://twitter.com/" target="_blank"><img src="imagenes/tuiter-removebg-preview.png"></a>
@@ -295,5 +299,6 @@
     
 
     <script src="app.js"></script>
+    <script src="menu.js"></script>
   </body>
 </html>

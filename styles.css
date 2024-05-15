@@ -26,7 +26,7 @@ body{
     align-items: center;
 }
 
-.header__nav{
+.header-nav{
     
     display: flex;
     justify-content: flex-end;
@@ -34,32 +34,32 @@ body{
     gap: 30px;
     text-wrap: nowrap;
 }
-.header__figure{
+.header-figure{
     display: flex;
     align-items: center;
 }
-.logo__nike{
+.logo-nike{
     color: var(--color-secondary);
     width: 80px;
     height: 80px;
 }
 
-.header__span{
+.header-span{
     font-size: 2rem;
 }
 
-.nav__link{
+.nav-link{
     display: none;
     text-decoration: none;
     color: var(--color-primary);
     font-weight: 700;
 }
 
-.nav__link::after{
+.nav-link::after{
     content: "";
 }
 
-.nav__figure{
+.nav-figure{
     
     display: flex;
     justify-content: flex-end;
@@ -68,7 +68,7 @@ body{
     width: 100%;
 }
 
-.img__cart{
+.img-cart{
     width: 30px;
     height: 30px;
 }
@@ -76,15 +76,37 @@ body{
     
 }
 
-.nav__menu{
+.nav-menu{
+    width: 40px;
+    height: 40px;
+}
+
+.nav-menu span{
+ font-size: 25px;
+ width: 40px;
+ height: 40px;
+ display: flex;
+ flex-direction: column;
+ background: #8C2D9E;
+ align-items: center;
+ justify-content: center;
+ cursor: pointer;
+}
+.nav-menu.close{
+    
+}
+
+.menu-amburguesa{
     width: 30px;
     height: 30px;
+    
 }
+
 
 
 /*fin navegacion*/
 
-.section__banner{
+.section-banner{
     background-color: #000;
     color:#fff;
     display: flex;
@@ -104,7 +126,7 @@ body{
     
 }
 
-.section__content{
+.section-content{
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -113,7 +135,7 @@ body{
     align-items: center;
 }
 
-.section__button{
+.section-button{
     text-decoration: none;
     color: #fff;
     background-color: var(--color-secondary);
@@ -123,26 +145,26 @@ body{
     transition: background-color .3s ease-in-out;
 }
 
-.section__button:hover{
+.section-button:hover{
     background-color: var(--color-primary);
 }
 
-.section__nameLogo{
+.section-nameLogo{
     font-size: 1.7rem;
 }
 @media(min-width:768px){
 
     /*inicio navegacion*/
-    .nav__menu{
+    .nav-menu{
         display: none;
     }
-    .nav__link{
+    .nav-link{
         display: block;
     }
     /*fin navegacion*/
 
     /*banner*/
-    .section__title{
+    .section-title{
         font-size:3rem;
     }
 
@@ -154,27 +176,27 @@ footer{
     padding: 1rem 0;
     background: #8C2D9E;
 }
-.footer__logo{
+.footer-logo{
     margin-left: 40%;
 }
 
-.footer__logo:hover{
+.footer-logo:hover{
     transform: translateY(10px);
 }
-.footer__logo img{
+.footer-logo img{
     width: 50px;
     height: 50px;
     gap: 5rem;
 }
 
-.footer__details p{
+.footer-details p{
     text-align: center;
     padding-top: 1rem;
     color: rgb(22, 22, 21);
 }
 
 
-.seccion__video {
+.seccion-video {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
