@@ -159,7 +159,47 @@ body{
     .banner a:hover{
         background-color: #61256A;
     }
-  
-
-      
+}    
 /*fin banner/
+
+
+/*footer*/
+
+footer{
+    width: 180px;
+    padding: 1rem 0;
+    margin: 5px;
+    background: #61256A;
+}
+.footer__redes{
+    margin-left: 40%;
+}
+
+.footer__redes:hover{
+    transform: translateY(10px);
+}
+.footer__redes img{
+    width: 50px;
+    height: 50px;
+    gap: 5rem;
+}
+
+.footer__letras p{
+    text-align: center;
+    padding-top: 0.2rem;
+    color:#fbf5fe ;
+    font-size: small;
+}
+
+
+@media (min-width: 768px) {
+    footer{
+        width: 120px;
+        padding: 1rem 0;
+        background: #61256A;
+    }
+}
+
+
+
+/*footer fin*/
