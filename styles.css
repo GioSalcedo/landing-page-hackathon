@@ -141,6 +141,37 @@ body{
         background-color: #61256A;
     }
   
+/*footer*/
+
+footer{
+    padding: 1rem 0;
+    background: #8C2D9E;
+}
+.footer__logo{
+    margin-left: 40%;
+}
+
+.footer__logo:hover{
+    transform: translateY(10px);
+}
+.footer__logo img{
+    width: 50px;
+    height: 50px;
+    gap: 5rem;
+}
+
+.footer__details p{
+    text-align: center;
+    padding-top: 1rem;
+    color: rgb(22, 22, 21);
+}
+
+
+
+/*footer fin*/
+
+
+
     
 
     @media (min-width: 768px) {
@@ -172,9 +203,9 @@ body{
 
     .banner a:hover{
         background-color: #61256A;
-    }
-    
-  
-
-      
+    } 
+}    
 /*fin banner/
+
+    
+
