@@ -145,3 +145,43 @@ body{
 
 }
 
+/*footer*/
+
+footer{
+    padding: 1rem 0;
+    background: #8C2D9E;
+}
+.footer__logo{
+    margin-left: 40%;
+}
+
+.footer__logo:hover{
+    transform: translateY(10px);
+}
+.footer__logo img{
+    width: 50px;
+    height: 50px;
+    gap: 5rem;
+}
+
+.footer__details p{
+    text-align: center;
+    padding-top: 1rem;
+    color: rgb(22, 22, 21);
+}
+
+
+.seccion__video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.video {
+    border-width: 4px;
+    border-style: solid;
+    border-color: #8C2D9E;
+}
+
+
+/*footer fin*/
