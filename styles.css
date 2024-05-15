@@ -19,7 +19,7 @@ body{
     width: 90%;
     margin: 0 auto;
 }
-
+/*inicio navegacion*/
 .header{
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 30px;
+    gap: 12px;
     width: 100%;
 }
 
@@ -78,27 +78,40 @@ body{
     height: 30px;
 }
 
+
+/*fin navegacion*/
 @media(min-width:768px){
 
+    /*inicio navegacion*/
     .nav__menu{
         display: none;
     }
     .nav__link{
         display: block;
     }
+    /*fin navegacion*/
 
 }
 
+
+
 /*inicio banner*/
 .banner {
-      padding: 10px 20px;
+    margin-top: 30px;
+     max-width:90%;
+
+      /* padding: 0 auto; */
       text-align: center;
+      position: relative;
     }
     .banner p {
-      margin: 0;
-      font-size: 2.2em;
-      position: relative;
-      top: 200PX;
+      margin: 0 auto;
+      padding: 0 20px;
+      font-size: 1.4em;
+      position: absolute;
+      top: 50px;
+      
+      text-align: center;
       color: #fbf5fe;
     }
     .banner H1{
@@ -108,6 +121,7 @@ body{
     }
 
     .imagen1 {
+        width: 100%;
         border-radius: 15px;
         border-width: 4px;
         border-style: solid;
@@ -120,7 +134,7 @@ body{
         padding: 7px 14px;
         border-radius: 4px;
         position: relative;
-        top: 250px;
+        top: 140px;
     }
 
     .banner a:hover{
@@ -130,7 +144,7 @@ body{
     
 
     @media (min-width: 768px) {
-      .banner {
+      /* .banner {
         width: 100%;
         padding: 20px 0px 20px 0px;
         margin: 20px 0px 20px 0px;
@@ -159,7 +173,7 @@ body{
     .banner a:hover{
         background-color: #61256A;
     }
-  
+   */
 
-      
+}
 /*fin banner/
